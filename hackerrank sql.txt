@@ -1,0 +1,88 @@
+abs() operator is used to eliminate the negative sign
+
+
+
+mod() operator is used to find remainder 
+	eg-> mod(5,2) which will be equal to 1
+
+
+
+order by can have multiple attributes seperated with the comma(,) operator 
+	The preference will be decided by the order of the order by 
+		the attibute which is before comma is the first preference and if there is a conflict like two or more paramters having the same value
+			then the table is ordered by second attribute i.e the attribute after comma(,)
+
+
+
+
+use like operator if we have to find a table data which is starting from particular alphabet
+
+
+
+SELECT DISTINCT city FROM station WHERE city RLIKE '^[aeiou]' AND city RLIKE '[aeiou]$'
+					             (start)		      (end)	
+	the query will select the cities starting from one of  the 'aeiou' and ending with one of the 'aeiou'
+
+
+
+select city from station where city NOT rlike '^[aeiou]' ;
+	the query will select cities which don't have vowel at the beginning
+
+
+
+
+select name from students where marks > 75 order by RIGHT(NAME,3) ,id
+	the sorting happens between the last 3 digits and if there exists a name with same last 3 digits then sort them by ID
+
+
+
+
+select round(12.3423,2)
+	o/p->  12.34
+		rounding off upto 2 decimals as mentioned in the query
+
+
+
+
+P1(a,b) and P2(c,d) 
+	The Manhattan distance between the P1 and P2 is (c-a)+(d-b) 
+
+
+
+
+
+select pow(5,2) gives us 25 which is 5 square
+
+
+
+ P1(a,c) P2(b,d)    are 2 points in 2d
+	then Euclidean distance = sqrt(sqr(b-a) + sqr(d-c))
+
+
+
+
+query to find the type of the triangle with the given sides
+	select if(a+b>c and a+c>b and c+b>a,if(a=b and b=c,'Equilateral',if(a=b or b=c or a=c,'Isosceles','Scalene')),'Not A Triangle') from triangles
+
+
+
+
+lower() -> to make a string lowercase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
