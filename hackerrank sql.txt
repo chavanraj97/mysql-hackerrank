@@ -71,6 +71,18 @@ lower() -> to make a string lowercase
 
 
 
+group by statement can have 2 parameters provided they are changing proportionally
+	eg-> c1 raj
+	        c2 rohan
+	        c1 raj
+		in this case the c1 is assigned only to raj hence the group by can have two parameters in this table.
+			here->        sql_mode=only_full_group_by
+
+
+
+
+
+
 
 
 

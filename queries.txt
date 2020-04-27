@@ -1,0 +1,11 @@
+HACKERRANK QUERIES
+
+New Companies 
+
+select c.company_code,c.founder,count(distinct l.lead_manager_code),count(distinct s.senior_manager_code),count(distinct m.manager_code), count(distinct e.employee_code)
+from company as c
+join lead_manager as l using(company_code)
+join senior_manager as s using(lead_manager_code)
+join manager as m using(senior_manager_code)
+join employee as e using(manager_code)
+group by c.company_code,c.founder order by c.company_code
